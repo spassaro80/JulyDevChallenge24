@@ -12,11 +12,15 @@
     "start": "cds-serve"
   },
   "cds": {
+    "features": {
+      "in_memory_db": true
+    },
     "requires": {
+      "auth": "mocked",
       "db": {
         "kind": "sqlite",
         "credentials": {
-          "url": ":memory:"
+          "database": ":memory:"
         }
       }
     }
